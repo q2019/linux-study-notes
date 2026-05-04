@@ -4,7 +4,13 @@
 cd /etc/pam.d
 ```
 
-# 配置 ssh 登录后显示的信息
+## 查看配置文件
+
+```bash
+cat /etc/pam.d/sshd
+```
+
+## 配置 ssh 登录后显示的信息
 
 ```bash
 sudo vim /etc/pam.d/sshd
