@@ -44,7 +44,17 @@ ssh -L 8899:127.0.0.1:2888 root@188.188.188.188
 ssh -L 8899:188.188.188.188:2888 root@188.188.188.188
 ```
 
-成功后，你在本地电脑上连接 `localhost:3307`，就等于在安全地访问内网里的数据库。
+如果遇到如下问题
+
+```bash
+PS C:\Users\test> ssh -L 8899:127.0.0.1:2888 root@188.188.188.188
+Bad permissions. Try removing permissions for user: UNKNOWN\\UNKNOWN (S-1-5-21-0000000000-0000000000-0000000000-1001) on file C:/Users/test/.ssh/config.
+```
+
+删除此用户的权限即可
+
+- C:/Users/test/.ssh/config 打开此文件属性
+- 安全选项卡 > 高级 > 禁用继承 > 转为显式（这样可以保留之前继承的权限）> 删除用户 UNKNOWN\\UNKNOWN 即可
 
 #### 使用本地证书登录
 
