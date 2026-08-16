@@ -4,19 +4,11 @@
 
 vscode 中提交commit时，自动生成的文件名直接显示，而不是显示转义字符。
 
-PowerShell
+CMD ✅
 
-```PowerShell
-git config --global core.quotepath false
-```
+Git Bash ✅
 
-CMD
-
-```CMD
-git config --global core.quotepath false
-```
-
-Git Bash
+PowerShell ✅
 
 ```bash
 git config --global core.quotepath false
@@ -26,19 +18,11 @@ git config --global core.quotepath false
 
 如果返回 `false`，说明设置成功。
 
-PowerShell
+CMD ✅
 
-```PowerShell
-git config --global core.quotepath
-```
+Git Bash ✅
 
-CMD
-
-```CMD
-git config --global core.quotepath
-```
-
-Git Bash
+PowerShell ✅
 
 ```bash
 git config --global core.quotepath
@@ -160,9 +144,7 @@ Generating public/private ed25519 key pair.
 Enter file in which to save the key (C:\Users\test/.ssh/id_ed25519): C:\Users\test/.ssh/test
 ```
 
-生成两个文件
-test 为私钥
-test.pub 为公钥
+生成两个文件, test 为私钥, test.pub 为公钥
 
 ### 修改 .ssh/config 文件
 
